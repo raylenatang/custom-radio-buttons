@@ -1,9 +1,9 @@
-.example-radio-group {
-  display: flex;
-  flex-direction: line;
-  margin: 15px 0;
+.button-toggle-group-v1 {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.example-radio-button {
-  margin: 5px;
-}

@@ -1,13 +1,9 @@
-<mat-radio-group
-  aria-labelledby="example-radio-group-label"
-  class="example-radio-group"
->
-  <mat-radio-button
-    class="example-radio-button"
+<mat-button-toggle-group appearance="legacy" class="button-toggle-group-v1" aria-label="option">
+  <mat-button-toggle type="checkbox"
+    class="button-toggle-v1"
     *ngFor="let number of numbers"
     [value]="number"
   >
     {{ number }}
-  </mat-radio-button>
-</mat-radio-group>
-
+  </mat-button-toggle>
+</mat-button-toggle-group>

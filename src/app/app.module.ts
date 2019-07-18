@@ -3,16 +3,14 @@ import { NgModule } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppComponent } from "./app.component";
 
-import { MatSliderModule } from "@angular/material/slider";
-import { MatRadioModule } from "@angular/material/radio";
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSliderModule,
-    MatRadioModule
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
