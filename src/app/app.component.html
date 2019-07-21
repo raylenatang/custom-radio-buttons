@@ -1,9 +1,8 @@
-<mat-button-toggle-group appearance="legacy" class="button-toggle-group-v1" aria-label="option">
-  <mat-button-toggle type="checkbox"
-    class="button-toggle-v1"
-    *ngFor="let number of numbers"
-    [value]="number"
-  >
-    {{ number }}
-  </mat-button-toggle>
-</mat-button-toggle-group>
+<div class="toggle-button-group">
+  <mat-button-toggle-group name="degree" aria-label="Degree" #group="matButtonToggleGroup">
+    <mat-button-toggle *ngFor="let number of numbers" [value]="number">
+      {{ number }}
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+<p>Selected value: {{ group.value }}</p>
